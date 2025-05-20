@@ -69,8 +69,9 @@
 				<div class="section">
 					<div class="section-title">ABSTRACT</div>
 					<div class="section-content abstract">
-						Conversational Speech Synthesis (CSS) aims to generate speech with natural prosody by understanding the multimodal dialogue history (MDH). The latest work predicts the accurate prosody expression of the target utterance by modeling the utterance-level interaction characteristics of MDH and the target utterance. However, MDH contains fine-grained semantic and prosody knowledge at the word level.
-						Existing methods overlook the fine-grained semantic and prosody interaction modeling. To address this gap, we propose MFCIG-CSS, a novel Multimodal Fine-grained Context Interaction Graph-based CSS system. Our approach constructs two specialized interaction graphs: a multimodal fine-grained dialogue semantic interaction graph and a multimodal fine-grained dialogue prosody interaction graph. These two graphs effectively encode interactions between word-level semantics, prosody, and their influence on subsequent utterances in MDH. The encoded interaction features are then leveraged to enhance synthesized speech with natural conversational prosody. Experiments on the DailyTalk dataset demonstrate that MFCIG-CSS outperforms all baseline models in terms of prosody expressiveness. Code and speech samples are available at
+						<!-- Conversational Speech Synthesis (CSS) aims to generate speech with natural prosody by understanding the multimodal dialogue history (MDH). The latest work predicts the accurate prosody expression of the target utterance by modeling the utterance-level interaction characteristics of MDH and the target utterance. However, MDH contains fine-grained semantic and prosody knowledge at the word level. -->
+						<!-- Existing methods overlook the fine-grained semantic and prosody interaction modeling. To address this gap, we propose MFCIG-CSS, a novel Multimodal Fine-grained Context Interaction Graph-based CSS system. Our approach constructs two specialized interaction graphs: a multimodal fine-grained dialogue semantic interaction graph and a multimodal fine-grained dialogue prosody interaction graph. These two graphs effectively encode interactions between word-level semantics, prosody, and their influence on subsequent utterances in MDH. The encoded interaction features are then leveraged to enhance synthesized speech with natural conversational prosody. Experiments on the DailyTalk dataset demonstrate that MFCIG-CSS outperforms all baseline models in terms of prosody expressiveness. Code and speech samples are available at -->
+						Conversational Speech Synthesis (CSS) aims to generate speech with natural prosody by understanding the multimodal dialogue history (MDH). The latest work predicts the accurate prosody expression of the target utterance by modeling the utterance-level interaction characteristics of MDH and the target utterance. However, MDH contains fine-grained semantic and prosody knowledge at the word level. Existing methods overlook the fine-grained semantic and prosody interaction modeling. To address this gap, we propose MFCIG-CSS, a novel Multimodal Fine-grained Context Interaction Graph-based CSS system. Our approach constructs two specialized multimodal fine-grained dialogue interaction graphs: a semantic interaction graph and a prosody interaction graph. These two interaction graphs effectively encode interactions between word-level semantics, prosody, and their influence on subsequent utterances in MDH. The encoded interaction features are then leveraged to enhance synthesized speech with natural conversational prosody. Experiments on the DailyTalk dataset demonstrate that MFCIG-CSS outperforms all baseline models in terms of prosody expressiveness. Code and speech samples are available at
 						 <a href="https://github.com/coder-speech/MFCIG-CSS">https://github.com/coder-speech/MFCIG-CSS</a>. 
 					</div>
 				</div>
@@ -78,7 +79,7 @@
 				<div class="section">
 					<div class="section-title">MODEL ARCHITECTURE</div>
 					<div class="section-content model">
-						<img src="img/IS-25-png.png" alt="" class="model-img">
+						<img src="img/EMNLP-25-png.png" alt="" class="model-img">
 						
 						<p style="padding-top: 1rem; color: #a1a1a1; font-size: 1rem; text-align: center;">Figure: The overview of MFCIG-CSS consists of Multimodal Fine-grained Dialogue Semantic Interaction Graph, Multimodal Fine-grained Dialogue Prosody Interaction Graph, and Speech Synthesizer.</p>
 					</div>
@@ -97,9 +98,9 @@
 						</br> 6) <b>ECSS</b> incorporates a context modeling scheme based on multi-source knowledge heterogeneous graphs to enhance the emotional expressiveness of the synthesized speech. <a href="https://ojs.aaai.org/index.php/AAAI/article/view/29833" style="color: #1d5da4;">[PAPER]</a>
 						</br> 7) <b>I³-CSS</b> incorporates a context interaction modeling scheme that handles both inter-modal and intra-modal interactions, aiming to improve the prosodic performance of the synthesized speech. <a href="https://arxiv.org/abs/2412.18733" style="color: #1d5da4;">[PAPER]</a>
 						</br></br><strong>Ablation Experiment:</strong>
-						</br> <b>Abl.Exp.1</b> removes MFSIG to validate the impact of the multimodal fine-grained dialogue semantic interaction graph on model performance.
-						</br> <b>Abl.Exp.2</b> removes MFPIG to validate the impact of the multimodal fine-grained dialogue prosody interaction graph on model performance.
-						</br> <b>Abl.Exp.3</b> removes both MFSIG and MFPIG to assess their joint impact on model performance.
+						</br> <b>Abl.Exp.1: w/o SIG</b> removes SIG to validate the impact of the multimodal fine-grained dialogue semantic interaction graph on model performance.
+						</br> <b>Abl.Exp.2: w/o PIG</b> removes PIG to validate the impact of the multimodal fine-grained dialogue prosody interaction graph on model performance.
+						</br> <b>Abl.Exp.3: w/o SIG and PIG</b> removes both SIG and PIG to assess their joint impact on model performance.
 					</div>
 					<div class="section-content ">
 						<hr />
